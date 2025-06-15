@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int factorial = 1;
+    for (int i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    printf("%d\n", factorial);
+    return 0;
+}
+This is the factorial code in C language
+#include <iostream>
+using namespace std;
+int factorial(int N){
+    if(N<0){
+        return 0;
+    }
+    if(N == 0){
+        return 1;
+    }
+    return N*factorial(N-1);
+}
+
+int main(){
+    int N;
+    cin>>N;
+    cout << factorial(N) << endl;
+    return 0;
+}
+This code is in C++
+When it's ported from C programming language, I changed from using printf and scanf replace it with using cin and cout
